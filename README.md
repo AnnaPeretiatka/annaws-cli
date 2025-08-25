@@ -135,7 +135,7 @@ sudo pip3 install -e . # install system-wide
 
 ## ----- EC2 -----
 Help:
-  ```bash
+```bash
 annaws ec2 --help
 ```
 ### 1. annaws s3 create --> Creates EC2 instances
@@ -163,25 +163,36 @@ annaws ec2 create t2.small --name <chooseEC2name> --amount 2 --image-os amazon-l
 
 ### 2. annaws s3 list
 * List EC2 instances created by annaws-cli
-* Help: annaws ec2 list --help
+Help:
+```bash
+annaws ec2 list --help
+```
 ```bash
 annaws ec2 list
 ```
 
 ### 3. annaws s3 Start/Stop 
 * start/stop instances created by annaws-cli
-* Help: annaws ec2 manage --help
+Help:
+```bash
+annaws ec2 manage --help
+```
 ```bash
 annaws ec2 manage start <instance_id> # i-123..
 annaws ec2 manage stop  <instance_id>
 ```
 
 ## ----- S3 -----     
-* Help: annaws s3 --help
-
+Help:
+```bash
+annaws s3 --help
+```
 ### 1. annaws s3 create
 * creates private/public buckets
-* Help: annaws s3 create --help
+Help:
+```bash
+annaws s3 create --help
+```
 #### Flags:
  - --name: Base name of the bucket. Full name is "awsusername-name-6 chars"
  - --public: Makes the bucket public (requires confirmation)
@@ -197,7 +208,10 @@ annaws s3 create --name mybucket-public --public
 
 ### 2. annaws s3 upload_files
 * Upload files to S3 bucket
-* Help: annaws s3 upload-files --help
+Help:
+```bash
+annaws s3 upload-files --help
+```
 * Must insert args: "local file path" and "FULL bucket name"
 #### Flags:
  - --key: Path in the bucket for uploading files. Defaults to the file’s basename
@@ -211,17 +225,26 @@ Upload a file to a specific path inside the bucket
 annaws s3 upload-files ./logo.png <FULL-bucket-name> --key bucketpath/logo.png
 ```
 
-### 3. annaws s3 list --> List S3 buckets created by annaws-cli
-* Help: annaws s3 list --help
+### 3. annaws s3 list
+Help:
+```bash
+annaws s3 list --help
+```
+List S3 buckets created by annaws-cli:
 ```bash
 annaws s3 list
 ```
 
 ## ---- Route53 ----      
-* Help: annaws route53 --help
-
+Help:
+```bash
+annaws route53 --help
+```
 ### 1. annaws route53 create-zones
-* Help: annaws route53 create-zones --help
+Help:
+```bash
+annaws route53 create-zones --help
+```
 * Must insert arg: "domain-name"
 #### Flags:
  - --private: for private hosted zone 
@@ -236,19 +259,30 @@ Create a PRIVATE hosted zone (requires VPC ID)
 ```bash
 annaws route53 create-zones annaws.private --private --vpc-id vpc-09549181f6d60927a --commant "private hosted zone by annaws-cli"
 ```
-### 2. annaws route53 list-zones --> List hosted zones created by the CLI
-* Help: annaws route53 list-zones --help
+### 2. annaws route53 list-zones
+Help:
+```bash
+annaws route53 list-zones --help
+```
+List hosted zones created by the CLI:
 ```bash
 annaws route53 list-zones
 ```
 ### 3. annaws route53 list-records --> List records for all CLI-created zones
-* Help: annaws route53 list-records --help
+Help:
+```bash
+annaws route53 list-records --help
+```
+List records for all CLI-created zones:
 ```bash
 annaws route53 list-records
 ```
 
 ### 4. annaws route53 manage-records --> Manage DNS records. Supports: 
-* Help: annaws route53 manage-records --help
+Help:
+```bash
+annaws route53 manage-records --help
+```
 * Standard records (Maps a domain to an IPv4/another domain, A, CNAME, MX, TXT..) use --value (can repeat).
 * Alias records (Domain point to AWS resource without ip, A → ALB/CloudFront/S3 website) use --alias-dns and --alias-zone
 
@@ -291,6 +325,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

@@ -53,7 +53,7 @@ python3 --version
 pip3 --version
 ```
 
-2. AWS CLI configured with a profile that has permissions for EC2, S3, and Route53.
+### 2. AWS CLI configured with a profile that has permissions for EC2, S3, and Route53.
 
 #### Windows  
   * Download: https://awscli.amazonaws.com/AWSCLIV2.msi
@@ -81,7 +81,7 @@ sudo ./aws/install
 aws --version
 ```
 
-3. Git
+### 3. Git
    
 #### Windows  
   * Download: https://git-scm.com/downloads/win 
@@ -104,7 +104,7 @@ sudo yum install -y git
 git --version
 aws --version
 ```
-4. Installed python packages (installed with the requirements: pip install boto3 click):
+### 4. Installed python packages (installed with the requirements: pip install boto3 click):
     - boto3
     - click
 ---
@@ -275,6 +275,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

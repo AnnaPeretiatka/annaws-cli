@@ -10,5 +10,6 @@ setup(
             "annaws = annaws.cli:cli", 
         ],
     },
-    python_requires=">=3.9"
+    #python_requires=">=3.9"
+
 )

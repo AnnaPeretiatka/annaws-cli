@@ -27,7 +27,7 @@ AWS CLI tool wrapper for managing **EC2**, **S3**, and **Route53** resources wit
                                         --> unzip awscliv2.zip --> sudo ./aws/install | verify: aws --version
     - Amazon Linux - Download, run: sudo yum install -y unzip --> curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
                                     --> unzip awscliv2.zip --> sudo ./aws/install | verify: aws --version
-!!! MUST run: aws configure to connect to your aws account
+* !!! MUST run: aws configure to connect to your aws account
 
 3. Installed python packages (will be installed with the requirements):
     - boto3
@@ -198,5 +198,6 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 

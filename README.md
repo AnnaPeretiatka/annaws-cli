@@ -14,7 +14,7 @@ AWS CLI tool wrapper for managing **EC2**, **S3**, and **Route53** resources wit
 ---
 
 ## Prerequisites
-### 1. Python 3.9+ and pip
+### 1. Python 3.9+ (I used 3.11.0) and pip
 * This CLI tool requires **Python >= 3.9**.
   
 #### Windows  
@@ -28,20 +28,32 @@ AWS CLI tool wrapper for managing **EC2**, **S3**, and **Route53** resources wit
 ```bash
 brew install python@3.11
 python3 --version
-pip3 --version
+python3 -m pip --version
 ```
-**Linux (Ubuntu)**  
+**Linux (Ubuntu)**
+First, check your current version:
+```bash
+python3 --version
+```
+If it's less than 3.9, recommended for the cli tool to upgrade to 3.11
 ```bash
 sudo apt update
-sudo apt install -y python3.9 python3.9-venv python3.9-distutils python3-pip
-pip3 install --upgrade pip
-python3 --version
+sudo apt install -y software-properties-common
+sudo add-apt-repository -y ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install -y python3.11 python3.11-venv python3.11-distutils python3-pip
+python3.11 --version
 pip3 --version
 ```
 **Amazon Linux (2023) - recomanded**
+First, check your current version:
 ```bash
-sudo dnf install -y python3.9 python3.9-pip
-pip3 install --upgrade pip
+python3 --version
+```
+If it's less than 3.9, recommended for the cli tool to upgrade to 3.11
+```bash
+sudo dnf install -y python3.11 python3.11-pip
+python3.11 -m pip install --upgrade pip
 python3 --version
 pip3 --version
 ```
@@ -117,6 +129,13 @@ cd annaws-cli
 aws configure
 pip3 install -r requirements.txt
 pip3 install -e .
+```
+### ubuntu & Amazon Linux (2023) & mac 
+If you have 2 python3 versions after downloading 3.11 --> use python3.11
+```bash
+python3.11 -m pip install --upgrade pip
+python3.11 -m pip install -r requirements.txt
+python3.11 -m pip install -e .
 ```
 ---
 
@@ -275,6 +294,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

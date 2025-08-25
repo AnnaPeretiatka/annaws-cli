@@ -34,7 +34,7 @@ python3 -m pip --version
 ```bash
 python3 --version
 ```
-If it's less than 3.9, recommended for the cli tool to upgrade to 3.11
+* If it's less than 3.9, recommended for the cli tool to upgrade to 3.11
 ```bash
 sudo apt update
 sudo apt install -y software-properties-common
@@ -48,7 +48,7 @@ pip3 --version
 ```bash
 python3 --version
 ```
-If it's less than 3.9, recommended for the cli tool to upgrade to 3.11
+* If it's less than 3.9, recommended for the cli tool to upgrade to 3.11
 ```bash
 sudo dnf install -y python3.11 python3.11-pip
 python3.11 -m pip install --upgrade pip
@@ -77,6 +77,7 @@ aws --version
 ```
 **Linux (Ubuntu)**  
 ```bash
+sudo apt install unzip
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
@@ -292,6 +293,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

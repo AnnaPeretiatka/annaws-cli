@@ -126,8 +126,8 @@ Prepare your AWS credensials: Access key, Secret key, Region
 git clone https://github.com/AnnaPeretiatka/annaws-cli.git
 cd annaws-cli
 aws configure
-pip3 install -r requirements.txt
-pip3 install -e .
+sudo pip3 install -r requirements.txt
+sudo pip3 install -e .
 ```
 ---
 
@@ -286,6 +286,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

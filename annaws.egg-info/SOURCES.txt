@@ -1,0 +1,14 @@
+README.md
+setup.py
+annaws/__init__.py
+annaws/cli.py
+annaws/ec2.py
+annaws/globals.py
+annaws/route53.py
+annaws/s3.py
+annaws.egg-info/PKG-INFO
+annaws.egg-info/SOURCES.txt
+annaws.egg-info/dependency_links.txt
+annaws.egg-info/entry_points.txt
+annaws.egg-info/requires.txt
+annaws.egg-info/top_level.txt

@@ -15,7 +15,7 @@ AWS CLI tool wrapper for managing **EC2**, **S3**, and **Route53** resources wit
 
 ## Prerequisites
 ### 1. Python 3.9+ and pip
-This CLI tool requires **Python >= 3.9**.
+* This CLI tool requires **Python >= 3.9**.
 **Windows**  
   * Download: https://www.python.org/downloads/windows/  
   * During installation, check **"Add Python to PATH"**.  
@@ -272,5 +272,6 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 

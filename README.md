@@ -134,12 +134,12 @@ sudo pip3 install -e . # install system-wide
 ## Usage
 
 ## ----- EC2 -----
-* Help:
+Help:
   ```bash
 annaws ec2 --help
 ```
 ### 1. annaws s3 create --> Creates EC2 instances
-* Help:
+Help:
   ```bash
 annaws ec2 create --help
 ```
@@ -291,6 +291,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

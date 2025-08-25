@@ -129,13 +129,6 @@ aws configure
 pip3 install -r requirements.txt
 pip3 install -e .
 ```
-### ubuntu & Amazon Linux (2023) & mac 
-If you have 2 python3 versions after downloading 3.11 --> use python3.11
-```bash
-python3.11 -m pip install --upgrade pip
-python3.11 -m pip install -r requirements.txt
-python3.11 -m pip install -e .
-```
 ---
 
 ## Usage
@@ -293,6 +286,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

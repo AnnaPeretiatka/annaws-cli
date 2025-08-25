@@ -31,7 +31,6 @@ python3 --version
 python3 -m pip --version
 ```
 **Linux (Ubuntu)**
-First, check your current version:
 ```bash
 python3 --version
 ```
@@ -46,7 +45,6 @@ python3.11 --version
 pip3 --version
 ```
 **Amazon Linux (2023) - recomanded**
-First, check your current version:
 ```bash
 python3 --version
 ```
@@ -294,6 +292,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 

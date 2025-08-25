@@ -127,17 +127,22 @@ git clone https://github.com/AnnaPeretiatka/annaws-cli.git
 cd annaws-cli
 aws configure
 sudo pip3 install -r requirements.txt
-sudo pip3 install -e .
+sudo pip3 install -e . # install system-wide
 ```
 ---
 
 ## Usage
 
 ## ----- EC2 -----
-* Help: annaws ec2 --help
-
+* Help:
+  ```bash
+annaws ec2 --help
+```
 ### 1. annaws s3 create --> Creates EC2 instances
-* Help: annaws ec2 create --help
+* Help:
+  ```bash
+annaws ec2 create --help
+```
 * Recommended to include --key. Otherwise SSH access won't work.
 * Must insert arg: "instance_type": "t3.micro" or "t2.small"
 #### Flags:
@@ -286,6 +291,7 @@ All resource gets those TAGS:
 - Terminate EC2 instances
 - Delete S3 buckets.
 - Delete hosted zones and DNS records
+
 
 
 
